@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from FlagKit (MIT, Bowtie AB) by scripts/generate.ts. Do not edit. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="21dp"
+    android:height="15dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+  <path android:pathData="M0 0H21V15H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="0"
+          android:endX="10.5"
+          android:endY="15">
+        <item android:offset="0" android:color="#FFFFFFFF"/>
+        <item android:offset="1" android:color="#FFF0F0F0"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M0 0H21V15H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="0"
+          android:endX="10.5"
+          android:endY="15">
+        <item android:offset="0" android:color="#FFE33B44"/>
+        <item android:offset="1" android:color="#FFC02A32"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M10.5 9.255L7.855 11.141 8.831 8.042 6.22 6.109 9.468 6.08 10.5 3 11.532 6.08 14.78 6.109 12.169 8.042 13.145 11.141 10.5 9.255ZM10.5 8.027L11.294 8.593 11.001 7.663 11.785 7.082 10.81 7.074 10.5 6.149 10.19 7.074 9.215 7.082 9.999 7.663 9.706 8.593 10.5 8.027Z"
+      android:fillColor="#0A6135"/>
+</vector>

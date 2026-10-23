@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Flags Kit",
+    "slug": "expo-flags-kit-example",
+    "scheme": "flagskit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "com.hzblj.expoflagskit.example",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.hzblj.expoflagskit.example"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

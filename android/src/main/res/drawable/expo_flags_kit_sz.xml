@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from FlagKit (MIT, Bowtie AB) by scripts/generate.ts. Do not edit. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="21dp"
+    android:height="15dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+  <path android:pathData="M0 0H21V15H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="0"
+          android:endX="10.5"
+          android:endY="15">
+        <item android:offset="0" android:color="#FFFFFFFF"/>
+        <item android:offset="1" android:color="#FFF0F0F0"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M0 0H21V3H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="0"
+          android:endX="10.5"
+          android:endY="3">
+        <item android:offset="0" android:color="#FF486BCA"/>
+        <item android:offset="1" android:color="#FF3E5FBA"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M0 12H21V15H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="12"
+          android:endX="10.5"
+          android:endY="15">
+        <item android:offset="0" android:color="#FF486BCA"/>
+        <item android:offset="1" android:color="#FF3E5FBA"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M0 3H21V12H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="3"
+          android:endX="10.5"
+          android:endY="12">
+        <item android:offset="0" android:color="#FFFFDF20"/>
+        <item android:offset="1" android:color="#FFFFDA00"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M0 4H21V11H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="4"
+          android:endX="10.5"
+          android:endY="11">
+        <item android:offset="0" android:color="#FFCF1615"/>
+        <item android:offset="1" android:color="#FFB20D0C"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M15 7.5A4.5 2.5 0 1 1 6 7.5 4.5 2.5 0 1 1 15 7.5Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="5"
+          android:endX="10.5"
+          android:endY="10">
+        <item android:offset="0" android:color="#FFFFFFFF"/>
+        <item android:offset="1" android:color="#FFF0F0F0"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <group>
+    <clip-path android:pathData="M2 7.5A4.5 2.5 0 1 0 11 7.5 4.5 2.5 0 1 0 2 7.5Z"/>
+    <path android:pathData="M11 5L6 5 6 10 10 10Z"
+        android:fillType="evenOdd">
+      <aapt:attr name="android:fillColor">
+        <gradient
+            android:type="linear"
+            android:startX="8.5"
+            android:startY="5"
+            android:endX="8.5"
+            android:endY="10">
+          <item android:offset="0" android:color="#FF262626"/>
+          <item android:offset="1" android:color="#FF0D0D0D"/>
+        </gradient>
+      </aapt:attr>
+    </path>
+  </group>
+  <group>
+    <clip-path android:pathData="M15 7.5A4.5 2.5 0 1 1 6 7.5 4.5 2.5 0 1 1 15 7.5Z"/>
+    <path android:pathData="M12.5 7.5A1 1 0 1 1 10.5 7.5 1 1 0 1 1 12.5 7.5Z"
+        android:fillColor="#1A1A1A"
+        android:fillType="evenOdd"/>
+    <path android:pathData="M10.5 7.5A1 1 0 1 1 8.5 7.5 1 1 0 1 1 10.5 7.5Z"
+        android:fillColor="#F6F6F6"
+        android:fillType="evenOdd"/>
+  </group>
+</vector>

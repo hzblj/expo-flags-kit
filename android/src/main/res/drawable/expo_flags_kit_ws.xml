@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from FlagKit (MIT, Bowtie AB) by scripts/generate.ts. Do not edit. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="21dp"
+    android:height="15dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+  <path android:pathData="M0 0H21V15H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="0"
+          android:endX="10.5"
+          android:endY="15">
+        <item android:offset="0" android:color="#FFFFFFFF"/>
+        <item android:offset="1" android:color="#FFF0F0F0"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M0 0H21V15H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="0"
+          android:endX="10.5"
+          android:endY="15">
+        <item android:offset="0" android:color="#FFE31F37"/>
+        <item android:offset="1" android:color="#FFCC162C"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M0 8L11 8 11 0 0 0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="5.5"
+          android:startY="0"
+          android:endX="5.5"
+          android:endY="8">
+        <item android:offset="0" android:color="#FF083B9A"/>
+        <item android:offset="1" android:color="#FF042E7D"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M5 7L4.293 7.207 4.5 6.5 4.293 5.793 5 6 5.707 5.793 5.5 6.5 5.707 7.207 5 7ZM5 2L4.293 2.207 4.5 1.5 4.293 0.793 5 1 5.707 0.793 5.5 1.5 5.707 2.207 5 2ZM3 4.5L2.293 4.707 2.5 4 2.293 3.293 3 3.5 3.707 3.293 3.5 4 3.707 4.707 3 4.5ZM7.5 4L6.793 4.207 7 3.5 6.793 2.793 7.5 3 8.207 2.793 8 3.5 8.207 4.207 7.5 4ZM6.25 5.5C6.112 5.5 6 5.388 6 5.25 6 5.112 6.112 5 6.25 5 6.388 5 6.5 5.112 6.5 5.25 6.5 5.388 6.388 5.5 6.25 5.5Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="5.25"
+          android:startY="0.793"
+          android:endX="5.25"
+          android:endY="7.207">
+        <item android:offset="0" android:color="#FFFFFFFF"/>
+        <item android:offset="1" android:color="#FFF0F0F0"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>

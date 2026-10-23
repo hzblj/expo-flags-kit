@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated from FlagKit (MIT, Bowtie AB) by scripts/generate.ts. Do not edit. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="21dp"
+    android:height="15dp"
+    android:viewportWidth="21"
+    android:viewportHeight="15">
+  <path android:pathData="M0 0H21V15H0Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.5"
+          android:startY="0"
+          android:endX="10.5"
+          android:endY="15">
+        <item android:offset="0" android:color="#FFFFFFFF"/>
+        <item android:offset="1" android:color="#FFF0F0F0"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M0.004 0.003H21.004V15.003H0.004Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="10.504"
+          android:startY="0.003"
+          android:endX="10.504"
+          android:endY="15.003">
+        <item android:offset="0" android:color="#FF158AFF"/>
+        <item android:offset="1" android:color="#FF007FFF"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M24.273 3.906L-1.566 17.072-4.29 11.726 21.549-1.44Z"
+      android:fillColor="#FDD216"
+      android:fillType="evenOdd"/>
+  <path android:pathData="M24.095 2.833L-1.744 15.999-3.56 12.435 22.279-0.731Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:type="linear"
+          android:startX="11.175"
+          android:startY="9.416"
+          android:endX="9.359"
+          android:endY="5.852">
+        <item android:offset="0" android:color="#FFCE1120"/>
+        <item android:offset="1" android:color="#FFE11B2B"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path android:pathData="M3.504 4.478L2.034 5.525 2.576 3.804 1.126 2.73 2.931 2.714 3.504 1.003 4.077 2.714 5.881 2.73 4.431 3.804 4.973 5.525Z"
+      android:fillColor="#FDD216"
+      android:fillType="evenOdd"/>
+</vector>

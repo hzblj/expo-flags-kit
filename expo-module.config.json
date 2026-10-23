@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": {
+    "modules": ["ExpoFlagsKitModule"]
+  },
+  "android": {
+    "modules": ["com.hzblj.expoflagskit.ExpoFlagsKitModule"]
+  }
+}
