@@ -141,6 +141,10 @@ The [example app](https://github.com/hzblj/expo-flags-kit/tree/main/apps/example
 yarn && yarn prebuild && yarn ios   # or: yarn android
 ```
 
+## More libraries
+
+The other libraries from the same author are at **[libraries.janblazej.dev](https://www.libraries.janblazej.dev)**.
+
 ## License
 
 MIT © Jan Blazej. The flag artwork is [FlagKit](https://github.com/madebybowtie/FlagKit), MIT © Bowtie AB; see [`flagkit/LICENSE`](https://github.com/hzblj/expo-flags-kit/blob/main/packages/expo-flags-kit/flagkit/LICENSE).
