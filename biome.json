@@ -1,37 +1,49 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.5.4/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "extends": [
     "@hzblj/biome-config",
     "@hzblj/biome-config/react-native"
   ],
-  "vcs": {
-    "clientKind": "git",
-    "enabled": true,
-    "useIgnoreFile": true
-  },
   "files": {
     "includes": [
       "**",
-      "!**/build",
       "!**/node_modules",
-      "!android/src/main/res",
-      "!assets",
-      "!flagkit",
-      "!ios/Flags.xcassets"
+      "!**/.expo",
+      "!**/.turbo",
+      "!**/.pack-check",
+      "!**/build",
+      "!apps/example/ios",
+      "!apps/example/android",
+      "!**/expo-env.d.ts",
+      "!packages/expo-flags-kit/android/src/main/res",
+      "!packages/expo-flags-kit/assets",
+      "!packages/expo-flags-kit/flagkit",
+      "!packages/expo-flags-kit/ios/Flags.xcassets"
     ]
   },
   "overrides": [
     {
       "includes": [
-        "example/metro.config.js"
+        "**/babel.config.js",
+        "**/metro.config.js",
+        "**/app.plugin.js"
       ],
       "linter": {
         "rules": {
-          "correctness": {
-            "noUndeclaredVariables": "off"
-          },
           "style": {
             "noCommonJs": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": [
+        "scripts/**"
+      ],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noConsole": "off"
           }
         }
       }

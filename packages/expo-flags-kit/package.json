@@ -1,0 +1,85 @@
+{
+  "name": "@hzblj/expo-flags-kit",
+  "version": "0.1.0",
+  "description": "Country flags for Expo as a native vector view on iOS and Android, with web support. FlagKit artwork, sharp at any size.",
+  "author": "Jan Blazej",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzblj/expo-flags-kit.git",
+    "directory": "packages/expo-flags-kit"
+  },
+  "bugs": {
+    "url": "https://github.com/hzblj/expo-flags-kit/issues"
+  },
+  "homepage": "https://github.com/hzblj/expo-flags-kit#readme",
+  "keywords": [
+    "country",
+    "country-flags",
+    "emoji",
+    "expo",
+    "expo-module",
+    "flag",
+    "flagkit",
+    "flags",
+    "react-native",
+    "svg",
+    "vector"
+  ],
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
+    },
+    "./expo-module.config.json": "./expo-module.config.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "android/build.gradle",
+    "android/src/main/**",
+    "assets/flags/*.svg",
+    "build",
+    "expo-module.config.json",
+    "flagkit/LICENSE",
+    "ios/*.podspec",
+    "ios/*.swift",
+    "ios/Flags.xcassets/**"
+  ],
+  "scripts": {
+    "build": "rm -rf build && tsc -p ./tsconfig.build.json",
+    "clean": "rm -rf build",
+    "prepack": "yarn run -T turbo run build --filter=$npm_package_name...",
+    "lint": "yarn run -T concurrently \"yarn biome:check\" \"yarn tsc:check\"",
+    "lint:fix": "yarn run -T biome check --write .",
+    "biome:check": "yarn run -T biome check .",
+    "tsc:check": "tsc -p ./tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "flags:generate": "tsx scripts/generate.ts",
+    "flags:verify": "tsx scripts/verify.ts"
+  },
+  "peerDependencies": {
+    "expo": ">=57",
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "~19.2.14",
+    "@xmldom/xmldom": "^0.9.12",
+    "expo": "~57.0.31",
+    "pngjs": "^7.0.0",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "svgpath": "^2.6.0",
+    "tsx": "^4.23.15",
+    "typescript": "~7.0.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

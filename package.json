@@ -1,87 +1,41 @@
 {
-  "name": "@hzblj/expo-flags-kit",
-  "version": "0.1.0",
-  "description": "Country flags for Expo as a native vector view on iOS and Android, with web support. FlagKit artwork, sharp at any size.",
-  "author": "Jan Blazej",
+  "name": "expo-flags-kit-monorepo",
+  "version": "0.0.0",
+  "private": true,
   "license": "MIT",
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./build/index.d.ts",
-      "default": "./build/index.js"
-    },
-    "./expo-module.config.json": "./expo-module.config.json",
-    "./package.json": "./package.json"
-  },
-  "files": [
-    "android/build.gradle",
-    "android/src/**",
-    "assets/flags",
-    "build",
-    "expo-module.config.json",
-    "flagkit/LICENSE",
-    "ios"
+  "workspaces": [
+    "apps/*",
+    "packages/*"
   ],
-  "keywords": [
-    "country",
-    "country-flags",
-    "emoji",
-    "expo",
-    "expo-module",
-    "flag",
-    "flagkit",
-    "flags",
-    "react-native",
-    "svg",
-    "vector"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hzblj/expo-flags-kit.git"
-  },
-  "bugs": {
-    "url": "https://github.com/hzblj/expo-flags-kit/issues"
-  },
-  "homepage": "https://github.com/hzblj/expo-flags-kit#readme",
   "scripts": {
-    "build": "rm -rf build && tsc -p tsconfig.build.json",
+    "example": "yarn workspace expo-flags-kit-example",
+    "start": "yarn example start",
+    "ios": "yarn example ios",
+    "android": "yarn example android",
+    "prebuild": "yarn example expo:prebuild",
+    "build": "yarn turbo run build --filter='./packages/*'",
+    "typecheck": "yarn turbo run tsc:check",
+    "lint": "yarn turbo run lint",
+    "test": "yarn turbo run test",
+    "flags:generate": "yarn workspace @hzblj/expo-flags-kit flags:generate",
+    "flags:verify": "yarn workspace @hzblj/expo-flags-kit flags:verify",
+    "biome:check": "biome check .",
+    "biome:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "pack:check": "yarn build && node ./scripts/pack-check.mjs",
     "changeset": "changeset",
-    "changeset:version": "changeset version",
-    "flags:generate": "tsx scripts/generate.ts",
-    "flags:verify": "tsx scripts/verify.ts",
-    "lint": "biome check .",
-    "lint:fix": "biome check --write .",
-    "prepack": "yarn build",
-    "release": "changeset publish",
-    "test": "node --import tsx --test test/*.test.ts",
-    "typecheck": "tsc -p tsconfig.json"
-  },
-  "peerDependencies": {
-    "expo": ">=57",
-    "react": "*",
-    "react-native": "*"
+    "changeset:version": "changeset version && yarn install --mode=update-lockfile",
+    "release": "yarn build && yarn workspaces foreach --all --no-private --topological npm publish --tolerate-republish && changeset tag",
+    "clean": "rm -rf .turbo node_modules/.cache/turbo && find . -name '.turbo' -type d -prune -exec rm -rf '{}' + && yarn example clean:native"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.4",
     "@changesets/changelog-github": "0.7.0",
     "@changesets/cli": "2.31.1",
     "@hzblj/biome-config": "^0.2.1",
-    "@types/node": "^22.19.0",
-    "@types/pngjs": "^6.0.5",
-    "@types/react": "~19.2.14",
-    "@xmldom/xmldom": "^0.9.12",
-    "expo": "~57.0.30",
-    "pngjs": "^7.0.0",
-    "react": "19.2.3",
-    "react-native": "0.86.3",
-    "svgpath": "^2.6.0",
-    "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
-  },
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "concurrently": "^10.0.5",
+    "turbo": "^2.10.12",
+    "typescript": "~7.0.2"
   },
   "packageManager": "yarn@4.18.0"
 }

@@ -1,9 +1,0 @@
-{
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true,
-    "paths": {
-      "@hzblj/expo-flags-kit": ["../src"]
-    }
-  }
-}
