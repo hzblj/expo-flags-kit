@@ -1,6 +1,6 @@
 {
   "name": "@hzblj/expo-flags-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Country flags for Expo as a native vector view on iOS and Android, with web support. FlagKit artwork, sharp at any size.",
   "author": "Jan Blazej",
   "license": "MIT",
