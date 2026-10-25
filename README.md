@@ -5,6 +5,11 @@
 
 Country flags for Expo as a native view. The 255 flags from [FlagKit](https://github.com/madebybowtie/FlagKit) are drawn as vectors on iOS, Android and web, so they stay sharp at any size, with typed codes, localized names and emoji to go with them.
 
+<p>
+  <img alt="Every flag with its name and code, in the example on iOS" height="560" src="media/ios-flags.png" />
+  <img alt="The same on Android" height="560" src="media/android-flags.png" />
+</p>
+
 ```sh
 npx expo install @hzblj/expo-flags-kit
 ```
