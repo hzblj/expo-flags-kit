@@ -1,5 +1,11 @@
 # @hzblj/expo-flags-kit
 
+## 0.1.3
+
+### Patch Changes
+
+- [`9162d19`](https://github.com/hzblj/expo-flags-kit/commit/9162d19775559c1b49e44a7d550fc50f7ae6be2d) Thanks [@hzblj](https://github.com/hzblj)! - The README shows the example app on iOS and Android.
+
 ## 0.1.2
 
 ### Patch Changes
